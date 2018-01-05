@@ -11,14 +11,13 @@ public class Solution {
         int count=0;
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int sum = 0;
         a = new int[n];
-        
         for(int i=0;i<n;i++){
             a[i] = sc.nextInt();
-            if(a[i]<0){
-                        count++;
-                    }
+        }
+        
+        for(int i=0;i<n;i++){
+            int sum = 0;
                 for(int j=i;j<n;j++){
                     sum += a[j];
                     if(sum<0){
